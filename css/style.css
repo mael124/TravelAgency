@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+
+:root{
+    --color-nav-bg: #46b3e6;
+    --color-blue-title: #2e279d;
+    --color-orange: #feb72b;
+    --color-white: white;
+    --color-grey: #f1f3f4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Oxygen', sans-serif;
+}
+/*-- General --*/
+a
+{
+    text-decoration: none;
+}
+
+h2
+{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*-- NavBar --*/
+.nav
+{
+    width: 100%;
+    padding: 20px 30px;
+    background: var(--color-blue-title);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo
+{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lacquer', sans-serif;
+}
+
+.nav ul
+{
+    display: flex;
+}
+
+.nav ul li
+{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav ul li:hover a
+{
+    color: var(--color-nav-bg);
+}
+.nav ul li a
+{
+    font-size: 18px;
+    color: white;
+}
+
+/*-- Header --*/
+.header
+{
+    height: 80vh;
+    width: 100%;
+    background-image: url('../Travel_Image/HeaderImage/beach-calm-clouds-idyllic-457882.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--color-blue-title);
+
+}
+
+.header h1
+{
+    position: relative;
+    top: 70%;
+    margin-bottom: 19px;
+}
+
+.header p
+{
+    position: relative;
+    top: 70%;
+}
+
+/*-- Box Content --*/
+.boxContent
+{
+    min-height: 300px;
+    width: 80%;
+    margin: 50px auto;
+}
+
+/*-- Part Hotel --*/
+
+.Hotels
+{
+    display: flex;
+}
+
+.Hotel__Item
+{
+    flex: 1;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.HotelItem__Illustartion img
+{
+    width: 100%;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.HotelItem__Description
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.HotelItem__Description h4
+{
+    color: var(--color-blue-title);
+    font-size: 16px;
+}
+
+.HotelItem__Description h3
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.orange
+{
+    color: var(--color-orange);
+}
+
+/*-- Travel Offer --*/
+.Section__Offer
+{
+    margin-top: 100px;
+    margin-bottom: 110px;
+}
+
+.Offer
+{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.Offer__Item
+{
+    flex: 1;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 7px;
+    background-color: var(--color-grey);
+    padding: 20px 0 10px 10px;
+}
+
+.Destination
+{
+    display: flex;
+    color: var(--color-blue-title);
+}
+
+.Destination h1
+{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.Destination p
+{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.price
+{
+    font-weight: bold;
+    float: right;
+    margin-right: 20px;
+}
+
+.price span
+{
+    color: var(--color-orange);
+}
+
+
+/*-- Section Circuit --*/
+.Circuit
+{
+    display: flex;
+}
+
+.Circuit__Item
+{
+    flex: 1;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 7px 7px 0 0;
+}
+
+.Illustration__CircuitItem img
+{
+    height: 250px;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.Description__CircuitItem
+{
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0 0 7px 7px;
+    background: var(--color-blue-title);
+}
+
+.Description__CircuitItem h5
+{
+    font-size: 15px;
+    color: var(--color-white);
+}
+
+/*-- About --*/
+.Section__About
+{
+    margin-top: 110px;
+}
+
+/*-- About Part One --*/
+.About__PartOne
+{
+    display: flex;
+    background: var(--color-grey);
+    min-height: 200px;
+    padding: 10px 0;
+}
+
+.center
+{
+    border-left: 1px dotted var(--color-blue-title);
+    border-right: 1px dotted var(--color-blue-title);
+}
+.About__Description
+{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.About__Description h3
+{
+    font-size: 20px;
+    color: var(--color-blue-title);
+    margin-bottom: 15px;
+}
+
+.About__Description p
+{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 25px;
+}
+
+/*-- About Part two --*/
+.About__PartTwo
+{
+    margin-top: 30px;
+}
+
+.About__PartTwo h4
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Partners
+{
+    display: flex;
+    margin-top: 30px;
+}
+
+.Partner__Illustration
+{
+    flex: 1;
+    height: 300px;
+    margin-right: 30px;
+    border-radius: 7px;
+}
+
+.Partner__Illustration img
+{
+    height: 300px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+/*-- Contact --*/
+.Section__Contact
+{
+    display: flex;
+    background: var(--color-grey);
+    width: 100%;
+    min-height:400px;
+    padding: 50px 50px 100px;
+}
+
+/*-- Part Left: Formulaire --*/
+.SectionContact__Left
+{
+    flex: 2;
+    background: var(--color-white);
+    border-radius: 10px;
+    min-height: 200px;
+    margin-right: 50px;
+}
+
+.FormInput
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.FormInput input
+{
+    height: 50px;
+    width: 40%;
+    padding-left: 20px;
+    border: 1px solid var(--color-grey);
+    border-radius: 7px;
+}
+
+.FormInput textarea
+{
+    height: 150px;
+    width: 90%;
+    padding-left: 20px;
+    padding-top: 20px;
+    border: 1px solid var(--color-grey);
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.btn-form
+{
+    width: 30%;
+    height: 50px;
+    background: var(--color-blue-title);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+/*-- Part Right --*/
+.SectionContact__Right
+{
+    flex: 1;
+    background: var(--color-blue-title);
+    height: 350px;
+    border-radius: 7px;
+    padding: 30px;
+    color: var(--color-white);
+}
+
+.SectionContact__Right h4
+{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.SectionContact__Right p
+{
+    line-height: 25px;
+    font-size: 18px;
+    margin-bottom: 30%;
+}
+
+.SectionContact__Right span
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*-- Footer --*/
+.footer
+{
+    background: var(--color-blue-title);
+    width: 100%;
+    min-height: 200px;
+    color: var(--color-white);
+    display: flex;
+    padding-left: 20%;
+    padding-top: 20px;
+}
+
+.footer p
+{
+    margin-right: 150px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer ul li
+{
+    list-style: none;
+    padding: 5px;
+}
+
+.footer ul li:hover a
+{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer ul li a
+{
+    color: var(--color-white);
+    font-size: 18px;
+}
